@@ -4,7 +4,7 @@ import { Dimensions } from "react-native";
 
 const StyledInput = styled.TextInput.attrs(({ theme }) => ({
     placeholderTextColor: theme.main,
-}))`
+ }))`
     width: ${({ width }) => width - 40}px;
     height: 60px;
     margin: 3px 0;
@@ -14,10 +14,23 @@ const StyledInput = styled.TextInput.attrs(({ theme }) => ({
     color: ${({ theme }) => theme.text};
 `;
 
-function Input() {
+const Input = ({placeholder, value, onChangeText, onSubmitEditing, onBlur }) => {
     const width = Dimensions.get('window').width;
     return ( 
-    <StyledInput width={width} placeholder={placeholder} maxLength={50} />
+    <StyledInput 
+        width={width} 
+        placeholder={placeholder} 
+        maxLength={50}
+        autoCapitalize="none"
+        autoCorrect={false}
+        returnKeyType="done"
+        keyboadrApperance="dark"
+        vlaue={value}
+        onChangeText={onChangeText}
+        onSubmitEditing={onSubmitEditing}
+        onBlur={onBlur}
+    />
+
     )
 }
 
