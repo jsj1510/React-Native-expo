@@ -17,10 +17,8 @@ ___
 <img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400">  
 </br>
 </br>
-
 ####StatusBar 컴포넌트  
 안드로이드 상태바에 생삭을변경해 title이 배경과 색이 비슷할시 가려지는 현상 해결  
-
 `import { StatusBar } from 'react-native';`  
 ``` js
 <StatusBar
