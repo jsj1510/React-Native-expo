@@ -86,6 +86,7 @@ import { images } from './images';
 아래와같이 import  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG" ></p>  
 
+**데이터담기**
 ```js
 const _saveTasks = async tasks => {
         try {
@@ -97,8 +98,6 @@ const _saveTasks = async tasks => {
     }
 ```  
 </br>
-</br>  
-.
 ####AppLoading install *로딩* 
 load 를 만들어  앱 로딩때 실행되게 해 첫화면이 나타나기전에 완료되어 불러온 항목이 화면에 렌더링  
 객체 형식(todo add가 객체형식)으로 불러오기  
