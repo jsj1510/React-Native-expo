@@ -63,12 +63,12 @@ return(
 autoCapitalize 자동 대문자전을 none으로 없앤다.  
 autoCorrect 자동 수정기능을 없앤다  
 returnKeyType 키보드 완료 버튼설정  
-[키보드설정]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400"></p>    
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400"></p>    
 </br>
 </br>
 #### 아이콘, 이미지 넣기  
 이미지 파일을 받아서 아래와 같이 넣는다.  
-[이미지]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG"></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG"></p>  
 아래와 같은방식으로 불러와 사용  
 ```js
 import { images } from './images';
@@ -78,17 +78,39 @@ import { images } from './images';
 .
 </br>
 </br>
-#### 데이터저장 AsyncStorage  
-[AsyncStorage]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113814665-f2e20580-97ac-11eb-85eb-243cd7578b07.PNG"></p>  
+#### AsyncStorage  install *데이터저장* 
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113814665-f2e20580-97ac-11eb-85eb-243cd7578b07.PNG"></p>  
 
 책에는 위와 같이나와있는데 그대로 할시 **에러** 발생  
-[16]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" ></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" ></p>  
 아래와같이 import  
-[async import]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG"></p>  
+데이터담기  
 
-
-
-
+```js
+const _saveTasks = async tasks => {
+        try {
+            await AsyncStorage.setItem('tasks', JSON.stringify(tasks));
+            setTasks(tasks);
+        } catch(e) {
+            console.log(e);
+        }
+    }
+```  
+</br>
+</br>
+####AppLoading install *로딩* 
+load 를 만들어  앱 로딩때 실행되게 해 첫화면이 나타나기전에 완료되어 불러온 항목이 화면에 렌더링  
+객체 형식(todo add가 객체형식)으로 불러오기  
+</br>
+데이터불러오기  
+```
+const _loadTasks = async () => {
+        const loadedTasks = await AsyncStorage.getItem('tasks');
+        setTasks(JSON.parse(loadedTasks || '{}'));
+    };
+```  
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113815152-ad720800-97ad-11eb-8fdd-a0656ba56612.PNG">>/p>  
 
 
 <!-- 링크 -->
