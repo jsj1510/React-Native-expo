@@ -12,7 +12,7 @@ ___
 </br>  
 
 ###SageAreaView 컴포넌트  
-자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.
+자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.  
 `const Container = styled.SafeAreaView``;`  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400"></p> 
 </br>  
