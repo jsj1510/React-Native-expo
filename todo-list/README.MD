@@ -85,7 +85,7 @@ import { images } from './images';
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" ></p>  
 아래와같이 import  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG"></p>  
-데이터담기  
+**데이터담기**  
 
 ```js
 const _saveTasks = async tasks => {
@@ -102,8 +102,7 @@ const _saveTasks = async tasks => {
 ####AppLoading install *로딩* 
 load 를 만들어  앱 로딩때 실행되게 해 첫화면이 나타나기전에 완료되어 불러온 항목이 화면에 렌더링  
 객체 형식(todo add가 객체형식)으로 불러오기  
-</br>
-데이터불러오기    
+**데이터불러오기**  
 ```
 const _loadTasks = async () => {
         const loadedTasks = await AsyncStorage.getItem('tasks');
