@@ -25,9 +25,11 @@ ___
     barStyle="light-content"
     backgroundColor={theme.background}
 />
-```    
+```  
+.
 </br>
-</br>
+</br>  
+
 ####Dimensions , useWindowDimensions  
 **모바일기기 크기에 자동으로 맞춰준다.**  
 Dimensions는 처음값 고정   
@@ -70,7 +72,8 @@ returnKeyType 키보드 완료 버튼설정
 import { images } from './images';
 ...
 <button type= {images.uncompled}/>
-```  
+``` 
+.
 </br>
 </br>
 #### 데이터저장 AsyncStorage  
