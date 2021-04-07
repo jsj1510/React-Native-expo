@@ -103,7 +103,7 @@ const _saveTasks = async tasks => {
 load 를 만들어  앱 로딩때 실행되게 해 첫화면이 나타나기전에 완료되어 불러온 항목이 화면에 렌더링  
 객체 형식(todo add가 객체형식)으로 불러오기  
 </br>
-데이터불러오기  
+데이터불러오기    
 ```
 const _loadTasks = async () => {
         const loadedTasks = await AsyncStorage.getItem('tasks');
