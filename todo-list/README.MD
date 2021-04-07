@@ -112,12 +112,11 @@ const _loadTasks = async () => {
     };
 ```  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113815152-ad720800-97ad-11eb-8fdd-a0656ba56612.PNG"></p>  
+
 책과 같이 입력하면 **에러**  
 아래 명령어 입력
 ![17](https://user-images.githubusercontent.com/75245755/113816085-3b9abe00-97af-11eb-930f-e7962b40e322.PNG)  
-      import 도 위에 책내용과 달리 입력  
-      ![async import](https://user-images.githubusercontent.com/75245755/113816241-81f01d00-97af-11eb-8516-78bb8d420526.PNG)  
+import 도 위에 책내용과 달리 입력  
+![apploading](https://user-images.githubusercontent.com/75245755/113816546-f4f99380-97af-11eb-8e9f-4357d2da1895.PNG)
 
 
-<!-- 링크 -->
-[링크이름](링크내용)
