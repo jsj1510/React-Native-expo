@@ -1,7 +1,5 @@
 ##ToDo List
-___
-
-
+---  
 
 ###프로젝트 설치  
 `expo init react-native-todo`  
@@ -73,11 +71,13 @@ returnKeyType 키보드 완료 버튼설정
 이미지 파일을 받아서 아래와 같이 넣는다.  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG"></p>  
 아래와 같은방식으로 불러와 사용  
+
 ```js
 import { images } from './images';
 ...
 <button type= {images.uncompled}/>
-``` 
+```  
+
 .
 </br>
 </br>
