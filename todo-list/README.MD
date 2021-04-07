@@ -43,7 +43,8 @@ export default function App() {
          <StyledInput 
         width={width} />
     )
-```    
+```   
+.
 </br>
 </br>
 ####TextInput 컴포넌트   
@@ -58,6 +59,7 @@ return(
         returnKeyType="done"
     />
 ```  
+.
 autoCapitalize 자동 대문자전을 none으로 없앤다.  
 autoCorrect 자동 수정기능을 없앤다  
 returnKeyType 키보드 완료 버튼설정  
