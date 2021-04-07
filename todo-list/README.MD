@@ -19,7 +19,9 @@ ___
 </br>
 ####StatusBar 컴포넌트  
 안드로이드 상태바에 생삭을변경해 title이 배경과 색이 비슷할시 가려지는 현상 해결  
+
 `import { StatusBar } from 'react-native';`  
+
 ``` js
 <StatusBar
     barStyle="light-content"
