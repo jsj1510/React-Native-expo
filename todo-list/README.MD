@@ -12,6 +12,7 @@ ___
 ####SageAreaView 컴포넌트  
 자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.
 `const Container = styled.SafeAreaView``;`
+![노치디자인]<img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400"> 
 
 ####StatusBar 컴포넌트  
 안드로이드 상태바에 생삭을변경해 title이 배경과 색이 비슷할시 가려지는 현상 해결  
@@ -55,9 +56,10 @@ autoCorrect 자동 수정기능을 없앤다
 returnKeyType 키보드 완료 버튼설정  
 
 
-![키보드설정]]<img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400">      
+![키보드설정]<img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400">      
 <!-- 링크 -->
 [링크이름](링크내용)
+![노치디자인](https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG)
 
 <!-- 이미지 -->
 ![이미지내용](링크)
