@@ -55,7 +55,7 @@ autoCorrect 자동 수정기능을 없앤다
 returnKeyType 키보드 완료 버튼설정
 
 
-![키보드설정]]<img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="200">
+![키보드설정]]<img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400">
 <!-- 링크 -->
 [링크이름](링크내용)
 
