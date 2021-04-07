@@ -114,9 +114,18 @@ const _loadTasks = async () => {
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113815152-ad720800-97ad-11eb-8fdd-a0656ba56612.PNG"></p>  
 
 책과 같이 입력하면 **에러**  
-아래 명령어 입력
+아래 명령어 입력  
 ![17](https://user-images.githubusercontent.com/75245755/113816085-3b9abe00-97af-11eb-930f-e7962b40e322.PNG)  
 import 도 위에 책내용과 달리 입력  
-![apploading](https://user-images.githubusercontent.com/75245755/113816546-f4f99380-97af-11eb-8e9f-4357d2da1895.PNG)
+![apploading](https://user-images.githubusercontent.com/75245755/113816546-f4f99380-97af-11eb-8e9f-4357d2da1895.PNG)  
+</br>
+</br>
+#### 앱 아이콘 , 로딩화면 변경  
+app.json 파일  
+reizemode cover로 변경시 로딩이미지가 화면전체를덮는다.  
+bgc는 백그라운드 색변경  
+splash > image 변경시 로딩화면 변경  
+icon 변경시 앱 아이콘 변경  
+![19](https://user-images.githubusercontent.com/75245755/113816772-3c801f80-97b0-11eb-92f1-694e6bc58b1b.PNG)  
 
 
