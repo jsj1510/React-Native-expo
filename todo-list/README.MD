@@ -111,7 +111,7 @@ const _loadTasks = async () => {
         setTasks(JSON.parse(loadedTasks || '{}'));
     };
 ```  
-<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113815152-ad720800-97ad-11eb-8fdd-a0656ba56612.PNG">>/p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113815152-ad720800-97ad-11eb-8fdd-a0656ba56612.PNG"></p>  
 책과 같이 입력하면 **에러**  
 아래 명령어 입력
 ![17](https://user-images.githubusercontent.com/75245755/113816085-3b9abe00-97af-11eb-930f-e7962b40e322.PNG)  
