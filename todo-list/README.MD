@@ -84,7 +84,7 @@ import { images } from './images';
 책에는 위와 같이나와있는데 그대로 할시 **에러** 발생  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" ></p>  
 아래와같이 import  
-<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG"></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG" ></p>  
 **데이터담기**  
 ```js
 const _saveTasks = async tasks => {
