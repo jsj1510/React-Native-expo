@@ -41,4 +41,28 @@ querySelector등 특정 dom선택처럼 특정 컴포넌트 선택할때 사용
   <input ref={refName} onSubmitEditing={() => refEmail.current.focus()} // 네임에서 키보드 완료버튼누르면 이메일로넘어간다
 ```  
 
+### Context API  
+props로 데이터 전달이 가능하지만 react 특성상 부모에서 자식에게만 값을 전달해주기에
+app -> a -> b -> c 와 같은 여러 경로를 거치는 불편함이있어 이런과정을 거치지않는 **Context API**를 이용하게된다  
+예시  
+//context file
+```js
+import { createContext } from 'react';
+const UserContext= createContext({ name: "sang jun" });
+export default UserContext;
+```  
+**Consumer 컴포넌트**  
+상위 컴포넌트중 가장 가까운곳에 Provider 컴포넌트가 전달하는 데이터를 이용 만약 상위에 provider가 없다면 create Context 함수의 파라미터로 전달된 기본값 사용  
+// component file  
+![consumer 컴포넌트](https://user-images.githubusercontent.com/75245755/113826643-61c75a80-97bd-11eb-82d5-c6a07ba9a823.PNG)  
+아래 방법으로 바로 값을 받을수있게된다.
+`<User/>`  
+
+**Provider 컴포넌트 **  
+Context에 있는 Provider는 하위 컴포에 context의 변화를 알리는 역할  
+value를 받아 모든 하위컴포에 전달하고 하위는 value가 변경될때마다 렌더링
+`<UserContext.Provider value={{ name: "sang" }}
+consumer -> provider -> 자식 자식은 provuder 값을 받는다.
+
+
 
