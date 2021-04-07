@@ -68,7 +68,7 @@ returnKeyType 키보드 완료 버튼설정
 </br>
 #### 아이콘, 이미지 넣기  
 이미지 파일을 받아서 아래와 같이 넣는다.  
-![이미지]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG" width="300" height="400"></p>  
+![이미지]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG"></p>  
 아래와 같은방식으로 불러와 사용  
 ```js
 import { images } from './images';
@@ -79,11 +79,11 @@ import { images } from './images';
 </br>
 </br>
 #### 데이터저장 AsyncStorage  
-![AsyncStorage]<p align="center"><img src="(https://user-images.githubusercontent.com/75245755/113813265-86fe9d80-97aa-11eb-9e95-e6fbf33ffd03.PNG" width="300" height="400"></p>  
+![AsyncStorage]<p align="center"><img src="(https://user-images.githubusercontent.com/75245755/113813265-86fe9d80-97aa-11eb-9e95-e6fbf33ffd03.PNG"></p>  
 책에는 위와 같이나와있는데 그대로 할시 **에러** 발생  
-![16]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" width="300" height="400"></p>  
+![16]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" ></p>  
 아래와같이 import  
-![async import]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG" width="300" height="400"></p>
+![async import]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG"></p>
 
 
 
