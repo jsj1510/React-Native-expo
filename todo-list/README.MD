@@ -2,6 +2,7 @@
 ___
 
 
+
 #####프로젝트 설치  
 `expo init react-native-todo`  
 `cd react-native-todo`  
@@ -11,12 +12,14 @@ ___
 </br>
 </br>
 
+
 ####SageAreaView 컴포넌트  
 자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.
 `const Container = styled.SafeAreaView``;`  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400"></p> 
 </br>
 </br>
+
 ####StatusBar 컴포넌트  
 안드로이드 상태바에 생삭을변경해 title이 배경과 색이 비슷할시 가려지는 현상 해결  
 
@@ -31,6 +34,7 @@ ___
 .
 </br>
 </br>  
+
 
 ####Dimensions , useWindowDimensions  
 **모바일기기 크기에 자동으로 맞춰준다.**  
