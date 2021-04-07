@@ -31,7 +31,7 @@
 </br>  
 
 
-#### imensions , useWindowDimensions  
+### Dimensions , useWindowDimensions  
 **모바일기기 크기에 자동으로 맞춰준다.**  
 Dimensions는 처음값 고정   
 useWindowDimensions 회전해도 맞춰준다.  
@@ -48,7 +48,7 @@ export default function App() {
 .
 </br>
 </br>
-#### TextInput 컴포넌트   
+### TextInput 컴포넌트   
 **키보드설정**  
 기본값으로 첫글자 대문자 오타 자동수정  
 ios는 완료버튼이 return으로 되어있다.  
@@ -103,7 +103,7 @@ const _saveTasks = async tasks => {
 </br>
 
 .  
-#### AppLoading install *로딩*   
+### AppLoading install *로딩*   
 load 를 만들어  앱 로딩때 실행되게 해 첫화면이 나타나기전에 완료되어 불러온 항목이 화면에 렌더링  
 객체 형식(todo add가 객체형식)으로 불러오기  
 
