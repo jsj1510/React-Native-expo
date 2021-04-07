@@ -1,26 +1,21 @@
 ##ToDo List
-___
+---  
 
-
-
-#####프로젝트 설치  
+###프로젝트 설치  
 `expo init react-native-todo`  
 `cd react-native-todo`  
 이 프로젝트에서는 스타일컴포넌트와 prop-types를 사용합니다.  
 `npm i styled-components prop-types`  
       
-</br>
-</br>
+</br>  
 
-
-####SageAreaView 컴포넌트  
-자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.
+###SageAreaView 컴포넌트  
+자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.  
 `const Container = styled.SafeAreaView``;`  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400"></p> 
-</br>
-</br>
+</br>  
 
-####StatusBar 컴포넌트  
+###StatusBar 컴포넌트  
 안드로이드 상태바에 생삭을변경해 title이 배경과 색이 비슷할시 가려지는 현상 해결  
 
 `import { StatusBar } from 'react-native';`  
@@ -76,11 +71,13 @@ returnKeyType 키보드 완료 버튼설정
 이미지 파일을 받아서 아래와 같이 넣는다.  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG"></p>  
 아래와 같은방식으로 불러와 사용  
+
 ```js
 import { images } from './images';
 ...
 <button type= {images.uncompled}/>
-``` 
+```  
+
 .
 </br>
 </br>
@@ -126,7 +123,7 @@ import 도 위에 책내용과 달리 입력
 ![apploading](https://user-images.githubusercontent.com/75245755/113816546-f4f99380-97af-11eb-8e9f-4357d2da1895.PNG)  
 </br>
 </br>
-#### 앱 아이콘 , 로딩화면 변경  
+### 앱 아이콘 , 로딩화면 변경  
 app.json 파일  
 reizemode cover로 변경시 로딩이미지가 화면전체를덮는다.  
 bgc는 백그라운드 색변경  
