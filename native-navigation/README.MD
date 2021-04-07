@@ -21,7 +21,7 @@ npm install react-native-gesture-handler@1.3.0
 **Navigator 컴포넌트**  
 화면관리 중간관리자  
 여러개의 스크린컴포넌트를 자식으로 갖는다.  
-**NavigationContainer 컴포넌트 **  
+**NavigationContainer 컴포넌트**  
 네비게이션의 계층구조와 상태를 관리  모든구성요소를 감싼 최상위 컴포넌트여야한다.  
 
 ### 설정 우선순위  
