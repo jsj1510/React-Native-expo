@@ -14,7 +14,7 @@ ___
 ####SageAreaView 컴포넌트  
 자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.
 `const Container = styled.SafeAreaView``;`  
-<img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400">  
+<center><img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400"></center>  
 </br>
 </br>
 ####StatusBar 컴포넌트  
@@ -63,12 +63,12 @@ return(
 autoCapitalize 자동 대문자전을 none으로 없앤다.  
 autoCorrect 자동 수정기능을 없앤다  
 returnKeyType 키보드 완료 버튼설정  
-[키보드설정]<img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400">    
+[키보드설정]<center><img src="https://user-images.githubusercontent.com/75245755/113812061-5d447700-97a8-11eb-8dfb-9c4904ec8cf1.PNG" width="300" height="400"></center>    
 </br>
 </br>
 #### 아이콘, 이미지 넣기  
 이미지 파일을 받아서 아래와 같이 넣는다.  
-![이미지](https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG)  
+![이미지]<center>(https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG)</center>  
 아래와 같은방식으로 불러와 사용  
 ```js
 import { images } from './images';
@@ -79,11 +79,11 @@ import { images } from './images';
 </br>
 </br>
 #### 데이터저장 AsyncStorage  
-![AsyncStorage](https://user-images.githubusercontent.com/75245755/113813265-86fe9d80-97aa-11eb-9e95-e6fbf33ffd03.PNG)  
+![AsyncStorage]<center>(https://user-images.githubusercontent.com/75245755/113813265-86fe9d80-97aa-11eb-9e95-e6fbf33ffd03.PNG)</center>  
 책에는 위와 같이나와있는데 그대로 할시 **에러** 발생  
-![16](https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG)  
+![16]<center>(https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG)</center>  
 아래와같이 import  
-![async import](https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG)
+![async import]<center>(https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG)</center>
 
 
 
