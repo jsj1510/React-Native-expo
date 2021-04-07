@@ -67,7 +67,7 @@ returnKeyType 키보드 완료 버튼설정
 </br>
 </br>
 #### 아이콘, 이미지 넣기  
-이미지 파일을 받아서 아래와 같이 넣는다.
+이미지 파일을 받아서 아래와 같이 넣는다.  
 ![이미지](https://user-images.githubusercontent.com/75245755/113812752-96311b80-97a9-11eb-83ef-33d2df63efdd.PNG)  
 아래와 같은방식으로 불러와 사용  
 ```js
@@ -91,6 +91,4 @@ import { images } from './images';
 
 <!-- 링크 -->
 [링크이름](링크내용)
-![노치디자인](https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG)
-
 
