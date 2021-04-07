@@ -55,14 +55,28 @@ export default UserContext;
 상위 컴포넌트중 가장 가까운곳에 Provider 컴포넌트가 전달하는 데이터를 이용 만약 상위에 provider가 없다면 create Context 함수의 파라미터로 전달된 기본값 사용  
 // component file  
 ![consumer 컴포넌트](https://user-images.githubusercontent.com/75245755/113826643-61c75a80-97bd-11eb-82d5-c6a07ba9a823.PNG)  
-아래 방법으로 바로 값을 받을수있게된다.
+아래 방법으로 바로 값을 받을수있게된다.  
+//App.js  
 `<User/>`  
 
 **Provider 컴포넌트 **  
 Context에 있는 Provider는 하위 컴포에 context의 변화를 알리는 역할  
-value를 받아 모든 하위컴포에 전달하고 하위는 value가 변경될때마다 렌더링
-`<UserContext.Provider value={{ name: "sang" }}
-consumer -> provider -> 자식 자식은 provuder 값을 받는다.
+value를 받아 모든 하위컴포에 전달하고 하위는 value가 변경될때마다 렌더링  
+//App.js
+`<UserContext.Provider value={{ name: "sang" }}`  
+consumer -> provider -> 자식 자식은 provuder 값을 받는다.  
+
+###  useContext  
+훨씬 간편하고 가독성이 좋아 이게낫다.  
+![useContext 수정1](https://user-images.githubusercontent.com/75245755/113829683-bd471780-97c0-11eb-893d-18467b27fe3d.PNG)  
+![useContext 수정2](https://user-images.githubusercontent.com/75245755/113829700-c1733500-97c0-11eb-9dde-c8b47d368b3e.PNG)  
+```js
+returnKey Type="done"
+/>
+);
+); ...
+```  
+
 
 
 
