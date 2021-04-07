@@ -79,11 +79,13 @@ import { images } from './images';
 </br>
 </br>
 #### 데이터저장 AsyncStorage  
-![AsyncStorage]<p align="center"><img src="(https://user-images.githubusercontent.com/75245755/113813265-86fe9d80-97aa-11eb-9e95-e6fbf33ffd03.PNG"></p>  
+![AsyncStorage]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113814665-f2e20580-97ac-11eb-85eb-243cd7578b07.PNG"></p>  
+
 책에는 위와 같이나와있는데 그대로 할시 **에러** 발생  
 ![16]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813321-a72e5c80-97aa-11eb-8f90-514c953b3d2e.PNG" ></p>  
 아래와같이 import  
 ![async import]<p align="center"><img src="https://user-images.githubusercontent.com/75245755/113813444-df359f80-97aa-11eb-9895-0e1e0451c341.PNG"></p>
+
 
 
 
