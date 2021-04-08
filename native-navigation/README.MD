@@ -122,6 +122,54 @@ headerBackTitleVisible: true, 를 사용해 두플랫폼 둘다 버튼의 타이
 useEffect hook과 사용법이 거의동일 **차이점은 컴포넌트 업데이트 직후 화면이 렌더링되기전에 실행**  
 렌더링 전에 변경할 부분이나 수치를 측정하는상황에 자주사용  
 
+## 탭 네비게이션 버튼아이콘 설정  
+```js
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+const TabIcon = ({ name, size, color }) => {
+  return <MaterialCommunityIcons name={name} size={size} color={color} />;
+};
+
+...
+
+ return (
+      <Tab.Navigator initialRouteName="Settings">
+        <Tab.Screen
+          name="Mail"
+          component={Mail}
+          options={{
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+                name: 'email',
+              }),
+          }}
+        />
+        <Tab.Screen
+          name="Meet"
+          component={Meet}
+          options={{
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+                name: 'video'
+              }),
+          }}
+        />
+        <Tab.Screen
+          name="Settings"
+          component={Settings}
+          options={{
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+                name: 'settings'
+              }),
+          }}
+        />
+      </Tab.Navigator>
+      ...
+```  
 
 
 
