@@ -1,14 +1,16 @@
 ## 리액트 네비게이션  
 
 ### 패키치 설치  
+기본 프로젝트 생성 후
 ```
+npm i styled-components
 npm i --save @react-navigation/native
+npm install react-native-gesture-handler@1.3.0
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 expo i react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-commuity/masked-view
 npm i @react-navigation/stack
-// expo i react-native-gesture-handler 에러
-npm install react-native-gesture-handler@1.3.0
-
-``` 
+```  
+expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update
 
 ### 네비게이션 구조
 리액트 네비게이션은 네비게이션컨테이너 컴포넌트, 네비게이터 컴포넌트, 스크린 컴포넌트 3가지이다.  
