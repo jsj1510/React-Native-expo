@@ -171,6 +171,39 @@ const TabIcon = ({ name, size, color }) => {
       ...
 ```  
 
+###  탭바 라벨  
+아래 방식으로 라벨위치를 바꿀수있는데 두가지만 가능하다  
+below-icon 기본값 아이콘 아래 라벨  
+beside-icon 아이콘 옆에 라벨  
+`<Tab.Navigator initialRouteName="Settings" tabBarOptions= {{ labelPosition: 'below-icon'}}>`  
+
+**라벨 렌더링 x**  
+tabBarOptions= {{ showLael: false }}   
+
+
+### 탭바 배경색, 아이콘색  
+tabBarOptions에 스타일을 바꿔줘 수정한다.  
+ activeTintColor 아이콘이 클릭됐을때 색  
+ inactiveTintColor 클릭안된 아이콘 색  
+```js
+const TabNavigation = () => {
+    return (
+      <Tab.Navigator 
+        initialRouteName="Settings"
+        tabBarOptions= {{ labelPosition: 'below-icon', 
+        style: {
+            backgroundColor: '#54b7f9',
+            borderTopColor: '#ffffff',
+            borderTopWidth: 2,
+        },
+        activeTintColor: '#ffffff',
+        inactiveTintColor: '#cfcfcf',
+        }}
+```  
+
+
+      
+
 
 
 
