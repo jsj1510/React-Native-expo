@@ -10,7 +10,10 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 expo i react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-commuity/masked-view
 npm i @react-navigation/stack
 ```  
-expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update
+expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update  
+
+탭 네비게이션  
+npm i @react-navigation/bottom-tabs
 
 ### 네비게이션 구조
 리액트 네비게이션은 네비게이션컨테이너 컴포넌트, 네비게이터 컴포넌트, 스크린 컴포넌트 3가지이다.  
