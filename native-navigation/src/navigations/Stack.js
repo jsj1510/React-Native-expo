@@ -1,18 +1,29 @@
 import React from 'react';
-import { createStackNavigater } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../screens/Home';
 import List from '../screens/List';
 import Item from '../screens/Item';
 
-function Stack() {
+const Stack = createStackNavigator();
+const StackNavigation = () => {
     return (
-        <Stack.Naviator>
+        <Stack.Navigator 
+            initialRouteName="Home"
+            screenOptions={{ 
+                cardStyle: { backgroundColor:"#ffffff" },
+                headerTitleAlign: 'center',
+            }}
+        >
             <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="List" component={List} />
-            <Stack.Screen name="Item" component={Item} />
-        </Stack.Naviator>
+            <Stack.Screen 
+                name="List" 
+                component={List} 
+                options={{ headerTitle:"List screen"}}
+            />
+            <Stack.Screen name="Detail" component={Item} />
+        </Stack.Navigator>
        
     )
 }
 
-export default Stack
+export default StackNavigation

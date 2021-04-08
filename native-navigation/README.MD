@@ -5,12 +5,17 @@
 ```
 npm i styled-components
 npm i --save @react-navigation/native
-npm install react-native-gesture-handler@1.3.0
-npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm i react-native-gesture-handler@1.3.0
+npm i react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context 
+npm i react-navigation-stack @react-native-community/masked-view
 expo i react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-commuity/masked-view
-npm i @react-navigation/stack
 ```  
-expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update
+expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update  
+
+아래와 같은 에러 발생시 npm i or yarn install 실행 해주면 된다.
+```
+Missing package "metro" in the project at C:\Users\tw450\react-native-expo\native-navigation. This usually means `react-native` is not installed. Please verify that dependencies in package.json include "react-native" and run `yarn` or `npm install`.
+```
 
 ### 네비게이션 구조
 리액트 네비게이션은 네비게이션컨테이너 컴포넌트, 네비게이터 컴포넌트, 스크린 컴포넌트 3가지이다.  

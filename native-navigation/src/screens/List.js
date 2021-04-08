@@ -13,14 +13,16 @@ const StyledText = styled.Text`
     margin-bottom: 10px;
 `;
 
-const item = [
+const items = [
     { _id: 1, name: 'native'},
     { _id: 2, name: 'native2'},
     { _id: 3, name: 'native3'}
 ]
 
-function List() {
-    const _onPress = item => {};
+function List({ navigation }) {
+    const _onPress = item => {
+        navigation.navigate('Detail', { id:item._id, name: item.name})
+    };
     return (
         <Container>
             <StyledText>List</StyledText>

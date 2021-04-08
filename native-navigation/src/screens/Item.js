@@ -12,11 +12,12 @@ const StyledText = styled.Text`
     margin-bottom: 10px;
 `;
 
-function Item() {
+function Item({ route }) {
     return (
         <Container>
             <StyledText>Item</StyledText>
-            <Button title="go to list screen" />
+            <StyledText>ID: {route.params.id}</StyledText>
+            <StyledText>Name: {route.params.name}</StyledText>
         </Container>
     )
 }
