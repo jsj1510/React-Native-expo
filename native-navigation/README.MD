@@ -5,17 +5,12 @@
 ```
 npm i styled-components
 npm i --save @react-navigation/native
-npm i react-native-gesture-handler@1.3.0
-npm i react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context 
-npm i react-navigation-stack @react-native-community/masked-view
+npm install react-native-gesture-handler@1.3.0
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 expo i react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-commuity/masked-view
+npm i @react-navigation/stack
 ```  
-expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update  
-
-아래와 같은 에러 발생시 npm i or yarn install 실행 해주면 된다.
-```
-Missing package "metro" in the project at C:\Users\tw450\react-native-expo\native-navigation. This usually means `react-native` is not installed. Please verify that dependencies in package.json include "react-native" and run `yarn` or `npm install`.
-```
+expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update
 
 ### 네비게이션 구조
 리액트 네비게이션은 네비게이션컨테이너 컴포넌트, 네비게이터 컴포넌트, 스크린 컴포넌트 3가지이다.  
@@ -65,6 +60,17 @@ item.js로 가서 parmas로 클릭돼서 들어가진 화면에 맞게 값이 �
 
 
 
+### 배경  
+스타일드 컴포넌트를 사용하면 아래와 같이 색이 살짝 다릅니다.  
+![배경](https://user-images.githubusercontent.com/75245755/113960531-9986de80-985f-11eb-93af-46cded5e9d5c.PNG)  
+이러할때 options 를 활용해  직접 바꿔줘야합니다.
+![스타일컴포넌트 안쓰고 직접](https://user-images.githubusercontent.com/75245755/113960598-ac99ae80-985f-11eb-8213-98f7c1d59b70.PNG)  
+그러면 처음 배경색과 달리 색이 같아집니다.
+![배경1](https://user-images.githubusercontent.com/75245755/113960444-7a884c80-985f-11eb-87d9-f1205e0f0aab.PNG)  
+
+### 안드로이드 타이틀 위치  
+안드로이드는 ios와 달리 왼쪽정렬인데 `options:{{ headertitle :center }}` 명령어를 사용해 가운데 정렬합니다.
+![options headertitle](https://user-images.githubusercontent.com/75245755/113960714-d6eb6c00-985f-11eb-8ca8-6d7f903d15c1.PNG)
 
 
 
