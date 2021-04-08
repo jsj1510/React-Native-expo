@@ -46,7 +46,7 @@ npm i @react-navigation/bottom-tabs
 ![스택네비게이션구조](https://user-images.githubusercontent.com/75245755/113839150-647c7c80-97ca-11eb-8905-1f5d436c7aea.PNG)  
 
 ### 화면이동  
-화면 이동을 위해 Stack.Navigator 컴포넌트에 이니셜라우트네임을 줍니다.
+화면 이동을 하기전 Stack.Navigator 컴포넌트에 이니셜라우트네임을 적습니다 이니셜라우트네임은 첫번째화면을 지정하는역할입니다.
 ![화면이동](https://user-images.githubusercontent.com/75245755/113959868-8d4e5180-985e-11eb-9159-10d39ed3751e.PNG)  
 파라미터로 값을 받아 버튼을 누를시 List 스크린으로 이동하게 합니다  
 ![화면이동2](https://user-images.githubusercontent.com/75245755/113959963-afe06a80-985e-11eb-8411-4bd74a2d9f13.PNG)  
