@@ -10,7 +10,10 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 expo i react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-commuity/masked-view
 npm i @react-navigation/stack
 ```  
-expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update
+expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handler폴더 제거 후 expo update  
+
+탭 네비게이션  
+npm i @react-navigation/bottom-tabs
 
 ### 네비게이션 구조
 리액트 네비게이션은 네비게이션컨테이너 컴포넌트, 네비게이터 컴포넌트, 스크린 컴포넌트 3가지이다.  
@@ -43,7 +46,7 @@ expo i react-native-gesture-handler 에러 발생시  react-native-gesture-handl
 ![스택네비게이션구조](https://user-images.githubusercontent.com/75245755/113839150-647c7c80-97ca-11eb-8905-1f5d436c7aea.PNG)  
 
 ### 화면이동  
-화면 이동을 위해 Stack.Navigator 컴포넌트에 이니셜라우트네임을 줍니다.
+화면 이동을 하기전 Stack.Navigator 컴포넌트에 이니셜라우트네임을 적습니다 이니셜라우트네임은 첫번째화면을 지정하는역할입니다.
 ![화면이동](https://user-images.githubusercontent.com/75245755/113959868-8d4e5180-985e-11eb-9159-10d39ed3751e.PNG)  
 파라미터로 값을 받아 버튼을 누를시 List 스크린으로 이동하게 합니다  
 ![화면이동2](https://user-images.githubusercontent.com/75245755/113959963-afe06a80-985e-11eb-8411-4bd74a2d9f13.PNG)  
@@ -119,6 +122,102 @@ headerBackTitleVisible: true, 를 사용해 두플랫폼 둘다 버튼의 타이
 useEffect hook과 사용법이 거의동일 **차이점은 컴포넌트 업데이트 직후 화면이 렌더링되기전에 실행**  
 렌더링 전에 변경할 부분이나 수치를 측정하는상황에 자주사용  
 
+## 탭 네비게이션 버튼아이콘 설정  
+```js
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+const TabIcon = ({ name, size, color }) => {
+  return <MaterialCommunityIcons name={name} size={size} color={color} />;
+};
+
+...
+
+ return (
+      <Tab.Navigator initialRouteName="Settings">
+        <Tab.Screen
+          name="Mail"
+          component={Mail}
+          options={{
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+                name: 'email',
+              }),
+          }}
+        />
+        <Tab.Screen
+          name="Meet"
+          component={Meet}
+          options={{
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+                name: 'video'
+              }),
+          }}
+        />
+        <Tab.Screen
+          name="Settings"
+          component={Settings}
+          options={{
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+                name: 'settings'
+              }),
+          }}
+        />
+      </Tab.Navigator>
+      ...
+```  
+
+###  탭바 라벨  
+아래 방식으로 라벨위치를 바꿀수있는데 두가지만 가능하다  
+below-icon 기본값 아이콘 아래 라벨  
+beside-icon 아이콘 옆에 라벨  
+`<Tab.Navigator initialRouteName="Settings" tabBarOptions= {{ labelPosition: 'below-icon'}}>`  
+
+**라벨 렌더링 x**  
+tabBarOptions= {{ showLael: false }}   
+
+
+### 탭바 배경색, 아이콘색  
+tabBarOptions에 스타일을 바꿔줘 수정한다.  
+ activeTintColor 아이콘이 클릭됐을때 색  
+ inactiveTintColor 클릭안된 아이콘 색  
+```js
+const TabNavigation = () => {
+    return (
+      <Tab.Navigator 
+        initialRouteName="Settings"
+        tabBarOptions= {{ labelPosition: 'below-icon', 
+        style: {
+            backgroundColor: '#54b7f9',
+            borderTopColor: '#ffffff',
+            borderTopWidth: 2,
+        },
+        activeTintColor: '#ffffff',
+        inactiveTintColor: '#cfcfcf',
+        }}
+        />
+        
+        ...
+        //포커스 됐을때와 아닐때 아이콘 모양바뀌게
+        <Tab.Screen
+          name="Mail"
+          component={Mail}
+          options={{
+              tabBarLabel: 'Inbox',
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+              ->  name: props.focused ? 'email' : 'email-outline',
+              }),
+          }}
+```  
+
+
+      
 
 
 
