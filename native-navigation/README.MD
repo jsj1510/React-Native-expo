@@ -74,4 +74,18 @@ item.js로 가서 parmas로 클릭돼서 들어가진 화면에 맞게 값이 �
 
 
 
+### 버튼수정  
+headerBackTitleVisible: true, 를 사용해 두플랫폼 둘다 버튼의 타이틀을 정해줄수있다.  
+
+```js
+<Stack.Screen 
+    name="List" 
+    component={List} 
+    options={{ 
+        headerTitle:"List screen",
+        headerBackTitleVisible: true,
+}}
+/>
+```  
+
 
