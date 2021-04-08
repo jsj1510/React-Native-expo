@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import StackNavigation from './navigations/Stack';
+import TabNavigation from './navigations/Tab';
 
 // const Container = styled.View`
 //     flex: 1;
@@ -12,7 +13,7 @@ import StackNavigation from './navigations/Stack';
 function App() {
     return (
         <NavigationContainer>
-            <StackNavigation />
+            <TabNavigation />
         </NavigationContainer>
     )
 }
