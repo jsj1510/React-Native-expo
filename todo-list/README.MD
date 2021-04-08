@@ -1,7 +1,7 @@
 ##ToDo List
 ---  
 
-###프로젝트 설치  
+### 프로젝트 설치  
 `expo init react-native-todo`  
 `cd react-native-todo`  
 이 프로젝트에서는 스타일컴포넌트와 prop-types를 사용합니다.  
@@ -9,13 +9,13 @@
       
 </br>  
 
-###SageAreaView 컴포넌트  
+### SageAreaView 컴포넌트  
 자동으로 노치디자인 까지 padding 하여 화면이 짤리지 않게한다.  
 `const Container = styled.SafeAreaView``;`  
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113812486-24f16880-97a9-11eb-8d89-839a3511869e.PNG" width="300" height="400"></p> 
 </br>  
 
-###StatusBar 컴포넌트  
+### StatusBar 컴포넌트  
 안드로이드 상태바에 생삭을변경해 title이 배경과 색이 비슷할시 가려지는 현상 해결  
 
 `import { StatusBar } from 'react-native';`  
@@ -31,7 +31,7 @@
 </br>  
 
 
-####Dimensions , useWindowDimensions  
+### Dimensions , useWindowDimensions  
 **모바일기기 크기에 자동으로 맞춰준다.**  
 Dimensions는 처음값 고정   
 useWindowDimensions 회전해도 맞춰준다.  
@@ -48,7 +48,7 @@ export default function App() {
 .
 </br>
 </br>
-####TextInput 컴포넌트   
+### TextInput 컴포넌트   
 **키보드설정**  
 기본값으로 첫글자 대문자 오타 자동수정  
 ios는 완료버튼이 return으로 되어있다.  
@@ -81,7 +81,7 @@ import { images } from './images';
 .
 </br>
 </br>
-#### AsyncStorage  install *데이터저장* 
+### AsyncStorage  install *데이터저장* 
 <p align="center"><img src="https://user-images.githubusercontent.com/75245755/113814665-f2e20580-97ac-11eb-85eb-243cd7578b07.PNG"></p>  
 
 책에는 위와 같이나와있는데 그대로 할시 **에러** 발생  
@@ -103,7 +103,7 @@ const _saveTasks = async tasks => {
 </br>
 
 .  
-####AppLoading install *로딩*   
+### AppLoading install *로딩*   
 load 를 만들어  앱 로딩때 실행되게 해 첫화면이 나타나기전에 완료되어 불러온 항목이 화면에 렌더링  
 객체 형식(todo add가 객체형식)으로 불러오기  
 
