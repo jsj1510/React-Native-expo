@@ -199,6 +199,21 @@ const TabNavigation = () => {
         activeTintColor: '#ffffff',
         inactiveTintColor: '#cfcfcf',
         }}
+        />
+        
+        ...
+        //포커스 됐을때와 아닐때 아이콘 모양바뀌게
+        <Tab.Screen
+          name="Mail"
+          component={Mail}
+          options={{
+              tabBarLabel: 'Inbox',
+            tabBarIcon: props =>
+              TabIcon({
+                ...props,
+              ->  name: props.focused ? 'email' : 'email-outline',
+              }),
+          }}
 ```  
 
 
