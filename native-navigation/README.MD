@@ -88,4 +88,24 @@ headerBackTitleVisible: true, 를 사용해 두플랫폼 둘다 버튼의 타이
 />
 ```  
 
+### 두 플랫폼 뒤로가기 버튼  
+![두플랫폼 뒤로가기버튼 맞추기](https://user-images.githubusercontent.com/75245755/113974354-b8de3580-9878-11eb-8310-2d99830cf560.PNG)  
+
+## 헤더 감추기  
+방법  
+![헤더감추기](https://user-images.githubusercontent.com/75245755/113975341-5128ea00-987a-11eb-89b7-72958ca6882c.PNG)  
+코드  
+![헤더감추기코드](https://user-images.githubusercontent.com/75245755/113975359-59812500-987a-11eb-8693-536bfdb363f6.PNG)  
+헤더를 감추고 나면 노치 디자인에 걸쳐질수있으니 스타일뷰 설정을 해준다.  
+![헤더감추기 스타일뷰](https://user-images.githubusercontent.com/75245755/113975397-69990480-987a-11eb-9649-5cf55a6f2c9c.PNG)  
+![헤더 감추기 화면](https://user-images.githubusercontent.com/75245755/113975430-74ec3000-987a-11eb-8524-913c6a0b84cd.PNG)  
+
+
+### useLayoutEffect  
+useEffect hook과 사용법이 거의동일 **차이점은 컴포넌트 업데이트 직후 화면이 렌더링되기전에 실행**  
+렌더링 전에 변경할 부분이나 수치를 측정하는상황에 자주사용  
+
+
+
+
 
