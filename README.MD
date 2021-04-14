@@ -68,6 +68,9 @@ consumer -> provider -> 자식 자식은 provuder 값을 받는다.
 
 ###  useContext  
 훨씬 간편하고 가독성이 좋아 이게낫다.  
+UseContext와 UseReducer를 쓰는 이유는,
+전역 상태관리 + 상태와 관련된 모든 로직을 컴포넌트간 이동 제약없이 쓸 수 있게끔 하기위해 쓰인다.  
+
 ![useContext 수정1](https://user-images.githubusercontent.com/75245755/113829683-bd471780-97c0-11eb-893d-18467b27fe3d.PNG)  
 ![useContext 수정2](https://user-images.githubusercontent.com/75245755/113829700-c1733500-97c0-11eb-9dde-c8b47d368b3e.PNG)  
 ```js
